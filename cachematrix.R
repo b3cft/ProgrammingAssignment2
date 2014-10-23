@@ -67,6 +67,8 @@ cacheSolve <- function(x, ...) {
     # if the fetched cached version is not null, say we're using the cached
     # version and return early.
     if (!is.null(inverse)) {
+        # This message isn't necessary, but makes it clear we're return a cached
+        # copy of the inverse.
         message("returning cached inverse")
         return(inverse)
     }
